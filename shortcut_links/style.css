@@ -97,6 +97,7 @@
     align-items: center;
     flex-flow: column;
     border-radius: 5px;
+    text-decoration: none;
     cursor: pointer;
 }
 #lw_link:hover {
@@ -160,6 +161,7 @@
     justify-content: center;
     align-items: center;
     font-weight: bold;
+    color: black;
 }
 #second_screen {
     background: none;

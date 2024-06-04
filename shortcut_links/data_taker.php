@@ -1,5 +1,5 @@
 <?php
-require_once("../vendor/autoload.php");
+require_once("vendor/autoload.php");
 
 use Embed\Embed;
 
@@ -20,7 +20,7 @@ $action = $_GET["action"] ?? 0;
 if ($action == 1) {
     $_SESSION["links"][] = $_GET["link"];
 } else if ($action == 2) {
-    unset($_SESSION["links"][(int)$_GET["link_num"]]);
+    unset($_SESSION["links"][$_GET["link"]]);
 }
 $link_list = [];
 if ($links != null) {
@@ -29,7 +29,7 @@ if ($links != null) {
         $icon = $link->icon;
         $link_list[] = [
             "title" => $link->title,
-            "icon" => $link->favicon,
+            "icon" => $link->image,
             "link" => (string)$link->url
         ];
     }

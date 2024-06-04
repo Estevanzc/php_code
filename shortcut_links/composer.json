@@ -1,0 +1,6 @@
+{
+    "require": {
+        "nyholm/psr7": "^1.8",
+        "embed/embed": "^4.4"
+    }
+}
